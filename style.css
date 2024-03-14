@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+
+main{
+    margin: 0 auto;
+    width: 800px;
+}
+
+ul{
+    padding-right: 40px;
+}
+
+li{
+    font-weight: 300;
+    transform: rotateZ(0.1deg);
+}
+
+#background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    overflow: hidden;
+}
+
+.diagonal{
+    position: absolute;
+    width: 100%;
+    height:240px;
+    clip-path: fill-box;
+}
+
+#diagonal1{
+    top: 40%;
+    background-color: rgba(148, 192, 162, 0.25);
+    transform: skewY(-10deg);
+}
+
+#diagonal2{
+    top: 100%;
+    background-color: white;
+    z-index: -99;
+    transform: skewY(70deg);
+}
+
+.card{
+    margin-top:20vh;
+}
+
+#card{
+    background-color:darkslategrey;
+    position: relative;
+    width: 800px;
+    border-radius:30px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+#cardcontents{
+    /*margin: 40px;
+    padding: 10px;*/
+
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;*/
+}
+
+#name{
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    padding-left: 32px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 700;
+    font-size:36px;
+}
+
+#name::before{
+    position: absolute;
+    background-color:aquamarine;
+    border-radius: 3px;
+    content: "";
+    display: block;
+    width: 3px;
+    height: 90px;
+}
+
+#name::after{
+    position: absolute;
+    background-color: aquamarine;
+    border-radius: 3px;
+    content: "";
+    display: block;
+    width: 95%;
+    height: 3px;
+    left: 2.5%;
+}
+
+.empty{
+    margin: 18px;
+}
+
+#introcontents{
+    display: flex;
+    justify-content: space-between;
+    padding:32px;
+}
+
+#introductions{
+    width: 390px;
+    /*margin-right:20px;*/
+}
+
+.introduction{
+    position: relative;
+    font-size: 28px;
+}
+
+.introname{
+    font-family: "Ubuntu", sans-serif;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+.introname::after{
+    position: absolute;
+    background-color:aquamarine;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+
+.introdetail{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
+    padding-left: 20px
+}
+
+#services{
+    width: 320px;
+}
+
+.service{
+    position: relative;
+    width: 300px;
+    height: 26px;
+    background-color: white;
+    color: darkslategray;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.servicename{
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    padding: 4px;
+    left: 5px;
+}
+
+.serviceid{
+    position: absolute;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    transform: rotateZ(0.1deg);
+    left: 100px;
+    top: 2px;
+}
+
+#servicessub{
+}
+
+.servicesub{
+    position: relative;
+    width: 130px;
+    height: 26px;
+    background-color: white;
+    color: darkslategray;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.servicesside{
+    position: relative;
+    float: left;
+    width: 160px;
+}
+
+#interestcard{
+    background-color:rgb(240,255,255);
+    position: relative;
+    width: 800px;
+    height: 360px;
+    border-radius:30px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#titleinterests{
+    position: relative;
+    color:darkslategrey;
+    padding: 20px;
+    padding-left: 32px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+#interestcontents{
+    margin:30px;
+    margin-top:0;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.interest{
+    background-color:white;
+    border-radius:15px 5px 15px 5px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+    color: darkslategray;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    transform: rotateZ(0.1deg);
+    padding: 10px;
+}
+
+.interestname{
+    color:darkslategrey;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+
+}
